@@ -17,3 +17,5 @@ def compressfile (mnuN):
     
 mnuN_arr = [[mnu, N] for mnu in (0, 0.1, 0.6) 
             for N in 37,42,47,56,66]
+
+map(compressfile, mnuN_arr)
