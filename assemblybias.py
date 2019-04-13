@@ -10,7 +10,7 @@ usecols=[2, 3, 5, 6, 8, 9, 10, 17, 41]
 dir_ayanna='/tigress/ayannam/'
 dir_cat='/tigress/jialiu/NUassemblybias/cat/'
 def compressfile (mnuN):
-    mnu, N = mnuoutnum
+    mnu, N = mnuN
     print mnu, N
     out=loadtxt(dir_ayanna+'mnv_%.1f/out_%02d_parents.list'%(mnu, N), usecols=usecols)
     save(dir_cat+'mnv_%.1f_%02d_parents.npy'%(mnu, N), out)
